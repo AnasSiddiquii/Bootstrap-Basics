@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap</title>
+
+    <!-- <p>
+      X-Small	           None   576px
+      Small	              sm	 ≥576px
+      Medium             	md	 ≥768px
+      Large	              lg	 ≥992px
+      Extra  large       	xl	≥1200px
+      Extra  extra large	xxl	≥1400px
+    </p> -->
+    
+    <style>
+      #red{background-color: red;
+      height: 300px;}
+
+      #green{background-color: aquamarine;
+      height: 100px;}
+
+    </style>
+  </head>
+  
+  
+  <body>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+          
+                <h1 class="bg-info text-white text-center rounded">Hello World!</h1>
+
+            <img src="blog1.jpg" alt="" class="img-fluid rounded">
+
+          </div>
+        </div>
+      </div>
+    
+      <br><br><br>
+
+      <!-- offseting columns-->
+      <div class="container-fluid"> <!-- minimize chrome -->
+        <div class="row bg-warning" style="min-height: 400px;">
+          
+          <div class="col-4 offset-md-1 bg-primary text-white">div1</div>
+          
+          <div class="col-4 offset-lg-2 bg-secondary text-white">div2</div>
+          
+        
+        </div>
+      </div>
+  
+      <br><br><br>
+    
+
+    <!-- re-arranging n responsive-->
+    <div class="container-fluid"> <!-- minimize chrome -->
+      <div class="row bg-warning" style="min-height: 400px;">
+        
+        <div class="col-4
+        bg-info text-white">div1</div>
+        
+        <div class="col-4 order-sm-3 order-md-1 order-lg-2
+        bg-warning text-white">div2</div>
+        
+        <div class="col-4 order-sm-2 order-md-3 order-lg-1
+        bg-danger text-white">div3</div>
+      
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- box right left -->
+    <div class="container-fluid">
+      <div class="row justify-content-evenly" style="min-height: 400px; background: #000;">
+        <div class="col-4 bg-danger">div1</div>
+        <div class="col-4 bg-warning">div2</div>
+      </div>
+    </div>
+
+    <br><br><br>
+    
+    <!-- box up down -->
+    <div class="container-fluid">
+      <div class="row" style="min-height: 400px; background: #000;">
+        <div class="col align-self-start bg-danger">div1</div>
+        <div class="col align-self-center bg-primary">div2</div>
+        <div class="col align-self-end bg-info">div3</div>
+        <div class="col align-self-center bg-secondary">div4</div>
+        <div class="col align-self-start bg-warning">div5</div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- auto n md -->
+    <div class="container-fluid">
+      <div class="row row-cols-auto">
+        <div class="col bg-danger">div</div>
+        <div class="col-3 bg-primary">div1</div>
+        <div class="col-md-auto  bg-info">this is div2</div>
+        <div class="col bg-secondary">div3</div>
+      </div>
+    </div>
+    
+    <br><br><br>
+    
+    <!-- nested boxes -->
+    <div class="container-fluid">
+      <div class="row" id="green">
+        <div class="col-6 bg-primary text-white">col-6
+          
+          <div class="row">
+            <div class="col-3 bg-info">col-3</div>
+            <div class="col-6 bg-danger text-black">col-6</div>
+            <div class="col-3 bg-sucess text-white">col-3</div>
+          </div> 
+          
+        </div>
+        
+        <div class="col-3 bg-secondary text-white">col-3</div>
+        
+        <div class="col-3 bg-sucess text-white">col-3</div>
+      </div>
+    </div>
+    
+    <br><br><br>
+
+    <!-- boxs -->
+    <div class="container-fluid" id="red">
+    <div class="row" id="green">
+      <div class="col-lg-4 col-md-3 col-sm-2 bg-primary   text-white">col-4</div>
+      <div class="col-lg-6 col-md-3 col-sm-2 bg-secondary text-white">col-6</div>
+        <div class="col-lg-2 col-md-6 col-sm-8 bg-sucess    text-white">col-2</div>
+      </div>
+    </div>
+    
+    <br><br><br>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
